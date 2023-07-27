@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:movie_app/domain/data_providers/session_data_provider.dart';
-import 'package:movie_app/ui/navigation/main_navigation.dart';
 import 'package:movie_app/ui/widgets/movie_list/movie_list_widget.dart';
 
 class MainScreenWidget extends StatefulWidget {

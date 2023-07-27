@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:movie_app/widgets/movie_details/movie_details_main_info_widget.dart';
-import 'package:movie_app/widgets/movie_details/movie_details_main_screen_cast.dart';
+import 'package:movie_app/ui/navigation/main_navigation.dart';
+import 'package:movie_app/ui/widgets/movie_details/movie_details_main_info_widget.dart';
+import 'package:movie_app/ui/widgets/movie_details/movie_details_main_screen_cast.dart';
 
 class MovieDetailsWidget extends StatefulWidget {
   final int movieId;
@@ -20,7 +21,7 @@ class MovieDetailsWidgetState extends State<MovieDetailsWidget> {
           actions: [
             IconButton(
               onPressed: () {
-                Navigator.of(context).popAndPushNamed('/auth');
+                Navigator.of(context).popAndPushNamed(MainNavigationRouteNames.auth);
               },
               icon: const Icon(Icons.logout),
             ),
